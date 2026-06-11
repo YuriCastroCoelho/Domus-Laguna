@@ -13,13 +13,13 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Router>
+      {/* A prop 'basename' é essencial aqui. 
+        Ela diz ao React: "Ignore o caminho inicial da URL 
+        ao processar as rotas internas".
+      */}
+      <Router basename="/">
         <Routes>
           <Route path="/" element={<Landing />} />
-          
-          {/* Adicionando a rota específica que você está tentando acessar */}
-          <Route path="/Domus-Laguna" element={<Home />} /> 
-          
           <Route path="/home" element={<Home />} />
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/login" element={<Login />} />

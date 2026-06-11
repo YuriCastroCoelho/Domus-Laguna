@@ -1,12 +1,10 @@
-from sqlalchemy import Column
-from sqlalchemy import Integer
-from sqlalchemy import String
-from sqlalchemy import Float
-
-from database import Base
+from sqlalchemy import Column, Integer, String, Float
+from app.database import Base
 
 class Imovel(Base):
     __tablename__ = "imoveis"
+
+    __table_args__ = {'extend_existing': True}
 
     id = Column(Integer, primary_key=True)
     tipo = Column(String)

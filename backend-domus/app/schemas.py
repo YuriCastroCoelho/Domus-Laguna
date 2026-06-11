@@ -19,3 +19,11 @@ class Imovel(ImovelBase):
 
     class Config:
         from_attributes = True
+        
+from pydantic import BaseModel, ConfigDict 
+
+class Imovel(ImovelBase):
+    id: int
+
+
+    model_config = ConfigDict(from_attributes=True)

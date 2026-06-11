@@ -1,20 +1,26 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI()
+from .database import engine, Base
+from . import models 
 
-# Configuração do CORS
-origens_permitidas = [
-    "http://localhost:3000", # Porta padrão do React
-    "http://127.0.0.1:3000",
-]
+
+from .routers.imoveis import router as imoveis_router 
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origens_permitidas,
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"], # Permite todos os métodos (GET, POST, PUT, DELETE)
-    allow_headers=["*"], # Permite todos os headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-# ... resto do seu código (inclusão dos routers, etc)
+app.include_router(imoveis_router)
+
+@app.get("/")
+def read_root():
+    return {"message": "API do Domus Laguna está online!"}

@@ -1,4 +1,16 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
+
+
+class UsuarioCreate(BaseModel):
+    nome: str
+    email: str
+    senha: str
+
+
+class UsuarioLogin(BaseModel):
+    email: str
+    senha: str
+
 
 class ImovelBase(BaseModel):
     tipo: str
@@ -11,19 +23,12 @@ class ImovelBase(BaseModel):
     imagem: str
     contato: str
 
+
 class ImovelCreate(ImovelBase):
     pass
 
-class Imovel(ImovelBase):
-    id: int
-
-    class Config:
-        from_attributes = True
-        
-from pydantic import BaseModel, ConfigDict 
 
 class Imovel(ImovelBase):
     id: int
-
 
     model_config = ConfigDict(from_attributes=True)

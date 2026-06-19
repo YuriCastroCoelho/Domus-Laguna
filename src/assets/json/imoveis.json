@@ -1,0 +1,121 @@
+
+{
+    "Espraiado": [
+      {
+        "id": 1,
+        "tipo": "Apartamento",
+        "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
+        "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
+        "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
+        "preco": 250000,
+        "imagem": "assets/json/img/imovel1.jpg",
+        "contato": "(21) 9999-0000"
+      },
+      {
+        "id": 2,
+        "tipo": "Casa",
+        "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "assets/json/img/imovel2.jpg",
+        "contato": "(21) 9888-1111"
+      },
+      {
+        "id": 3,
+        "tipo": "Kitnet",
+        "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "assets/json/img/imovel3.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+        "id": 4,
+        "tipo": "Casa",
+        "bairro": "Espraiado",
+        "geolocalizacao": [-22.95, -42.90],
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "assets/json/img/imovel4.jpg",
+        "contato": "(21) 9888-1111"
+      }
+    ],
+
+    "Centro": [
+      {
+        "id": 5,
+        "tipo": "Apartamento",
+        "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
+        "endereco": "Av. Roberto Silveira 100, Maricá, RJ",
+        "descricao": "Apartamento aconchegante com 2 quartos e uma vista maravilhosa.",
+        "preco": 250000,
+        "imagem": "assets/json/img/imovel5.jpg",
+        "contato": "(21) 9999-0000"
+      },
+      {
+        "id": 6,
+        "tipo": "Casa",
+        "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
+        "endereco": "Rua dos Girassóis 45, Maricá, RJ",
+        "descricao": "Casa espaçosa com 4 quartos, jardim e piscina.",
+        "preco": 850000,
+        "imagem": "assets/json/img/imovel6.jpg",
+        "contato": "(21) 9888-1111"
+      },
+      {
+        "id": 7,
+        "tipo": "Kitnet",
+        "bairro": "Centro",
+        "geolocalizacao": [-22.93, -42.82],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "assets/json/img/imovel7.jpg",
+        "contato": "(21) 9777-2222"
+      }
+    ],
+    "Ubatiba": [
+      {
+        "id": 8,
+        "tipo": "Kitnet",
+        "bairro": "Ubatiba",
+        "geolocalizacao": [-22.87, -42.78],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "assets/json/img/imovel8.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+        "id": 9,
+        "tipo": "Kitnet",
+        "bairro": "Ubatiba",
+        "geolocalizacao": [-22.87, -42.78],
+        "endereco": "Praça Central, Maricá, RJ",
+        "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+        "preco": 120000,
+        "imagem": "assets/json/img/imovel9.jpg",
+        "contato": "(21) 9777-2222"
+      },
+      {
+       "id": 10,
+       "tipo": "Kitnet",
+       "bairro": "Ubatiba",
+       "geolocalizacao": [-22.87, -42.78],
+       "endereco": "Praça Central, Maricá, RJ",
+       "descricao": "Kitnet ideal para estudantes, localizada no centro da cidade.",
+       "preco": 120000,
+       "imagem": "assets/json/img/imovel10.jpg",
+       "contato": "(21) 9777-2222"
+      }
+
+    ]
+  }

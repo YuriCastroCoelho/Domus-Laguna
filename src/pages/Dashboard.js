@@ -36,7 +36,7 @@ const Dashboard = () => {
   // Visitas agendadas pelo usuário em DetalhesImovel (ModalAgendamento),
   // salvas em 'domus_solicitacoes_visita'. Estava sendo lido aqui mas
   // não chegava a ser usado pelo componente MinhasVisitas — corrigido.
-  const [visitas, setVisitas] = useState(() => JSON.parse(localStorage.getItem('domus_solicitacoes_visita')) || []);
+  const [visitas] = useState(() => JSON.parse(localStorage.getItem('domus_solicitacoes_visita')) || []);
 
   useEffect(() => {
     const usuarioLogado = JSON.parse(localStorage.getItem('domus_usuarioAtual'));

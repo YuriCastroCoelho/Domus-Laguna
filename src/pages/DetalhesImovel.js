@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 import { 
   PageContainer, BackButton, HeroImage, ContentGrid, MainInfo, Sidebar, 
-  PropertyType, Title, Address, FeaturesBanner, FeatureItem, DescriptionSection, 
+  PropertyType, Title, Address, DescriptionSection, 
   ContactCard, Price, PrimaryButton, SecondaryButton,
   ModalOverlay, ModalContent, TextArea, SendButton,
   ReviewSection, ReviewForm, ReviewList, ReviewCard, Stars

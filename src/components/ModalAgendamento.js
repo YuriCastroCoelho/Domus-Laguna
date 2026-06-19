@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-  ModalOverlay, ModalContent, TextArea, ModalButtons, 
+  ModalOverlay, ModalContent, ModalButtons, 
   CancelButton, SendButton, FormGroup, Input, Row 
 } from '../styles/DetalhesImovelStyles';
 

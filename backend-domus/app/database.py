@@ -1,12 +1,21 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 
-# URL de conexão (ajuste conforme seu banco, aqui está como exemplo para SQLite)
-SQLALCHEMY_DATABASE_URL = "sqlite:///./domus.db"
+DATABASE_URL = "postgresql://postgres:postgres@postgres:5432/domus"
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+engine = create_engine(DATABASE_URL)
 
-# ESTA É A PARTE QUE ESTÁ FALTANDO NO SEU ARQUIVO
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
+
 Base = declarative_base()
+
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

@@ -32,3 +32,7 @@ class Imovel(ImovelBase):
     id: int
 
     model_config = ConfigDict(from_attributes=True)
+
+class FavoritoCreate(BaseModel):
+    usuario_id: int
+    imovel_id: int

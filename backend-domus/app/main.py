@@ -21,7 +21,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",  # React local
+        "https://domus-laguna.vercel.app/",  # React local
     ],
     allow_credentials=True,
     allow_methods=["*"],
